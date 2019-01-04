@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create Incident</title>
+
+<link rel="stylesheet" type="text/css" href="createincident.css">
+</head>
+
+
+<body >
+
+	<h1 id = "head">Create incident</h1>
+
+	<form action="ticket">
+
+ <b style="color: red"> Incident logged by * :  </b> <input type="text" name="incidentUser" placeholder="Insert your name" > <br>   <br> 
+<Strong style="color: red"> Contact Number * :</Strong> <input type="text" name="capturecontact" placeholder="Insert your Number" required ><br>  <br> 
+
+<Strong style="color: red"> Application impacted * : </Strong>  <input type="text"	name="appImpacted" required ><br>  <br> 
+	<Strong style="color: red">Incident status :</Strong> <select name="incidentStatus">	 
+	<option value="Active"> Active </option>
+	</select> <br> <br>
+	<Strong style="color: red"> Incident ShortDescription </Strong>: <input type="text" name="shortDesc" ><br> <br> 
+	
+	<Strong style="color: red"> Incident Priority </Strong>:	<select name = "priority" > <option value = "P1" > P1 </option>
+	<option value="P2"> P2 </option>
+	<option value="P3"> P3 </option> 
+	</select><br>  <br> 
+	
+	<input type = "submit" value = "Submit">
+
+	</form>
+</body>
+</html>

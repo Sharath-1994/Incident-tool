@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-image: url("Images/welcome.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#headmsg {
+	color: #ffffff; 
+}
+
+.link{
+	color: #000000;
+}
+

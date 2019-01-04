@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>ServiceNow</display-name>
+	<!-- <welcome-file-list> <welcome-file>index.html</welcome-file> </welcome-file-list> -->
+
+	<!-- <servlet> <servlet-name>ServiceNowController</servlet-name> <servlet-class>org.springframework.web.servlet.DispatcherServlet 
+		</servlet-class> </servlet> <servlet-mapping> <servlet-name>ServiceNowController</servlet-name> 
+		<url-pattern>/</url-pattern> </servlet-mapping> -->
+
+	<servlet>
+		<servlet-name>ServiceNowController</servlet-name>
+		<servlet-class>com.sharath.servicenow.createincident.ServiceNowController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServiceNowController</servlet-name>
+		<url-pattern>/ticket</url-pattern>
+	</servlet-mapping>
+	-->
+	<servlet>
+		<servlet-name>ViewIncidentController</servlet-name>
+		<servlet-class>com.sharath.servicenow.viewincident.ViewIncidentController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewIncidentController</servlet-name>
+		<url-pattern>/incidentList</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchController</servlet-name>
+		<servlet-class>com.sharath.servicenow.searchIncident.SearchController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchController</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>UpdateServlet</display-name>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>com.sharath.servicenow.update.UpdateController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>Filter</display-name>
+		<servlet-name>Filter</servlet-name>
+		<servlet-class>com.sharath.servicenow.filterIncidentdata.Filter
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Filter</servlet-name>
+		<url-pattern>/filter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>ORMController</display-name>
+		<servlet-name>ORMController</servlet-name>
+		<servlet-class>com.sharath.servicenow.createincident.orm.ORMController
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ORMController</servlet-name>
+		<url-pattern>/ormController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>IncidentController</display-name>
+		<servlet-name>IncidentController</servlet-name>
+		<servlet-class>com.sharath.tesrt.IncidentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>IncidentController</servlet-name>
+		<url-pattern>/IncidentController</url-pattern>
+	</servlet-mapping>
+</web-app>
